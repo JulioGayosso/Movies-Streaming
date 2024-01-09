@@ -1,6 +1,5 @@
 require('dotenv').config()
 
-
 const configs = {
     api: {
         port: process.env.PORT || 3000,
@@ -11,12 +10,12 @@ const configs = {
     db: {
         development: {
             //? Aqui deberan estar las configuraciones para la conexion con sequelize
-            dialect: 'postgres',
+            dialect: 'postgres', 
             host: 'localhost',
             port: 5432,
             username: 'postgres',
             password: 'julio',
-            database: 'example',
+            database: 'chalomovies',
             define: {
                 timestamps: true, //? Nos obliga a que todas las tablas tengan la propiedad createdAt y upadtedAt
                 underscored: true,

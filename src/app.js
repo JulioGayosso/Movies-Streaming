@@ -6,9 +6,6 @@ const initModels = require('./models/initModels')
 const config = require('../config').api
 
 
-
-
-
 const userRouter = require('./users/users.router')
 const authRouter = require('./auth/auth.router')
 
@@ -25,7 +22,7 @@ db.sync()
     .then(() => console.log('Database Synced'))
     .catch(err => console.log(err))
 
-initModels()
+initModels() 
 
 app.get('/', (req, res) => {
     responseHandlers.success({
