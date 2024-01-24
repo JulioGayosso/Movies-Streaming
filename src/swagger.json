@@ -1,0 +1,21 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Mi api de peliculas tipo netflis",
+        "version":"1.0.0"
+    },
+    "paths": {
+        "/api/v1/movies":{
+            "get":{
+                "responses": {
+                    "200":{
+                        "description": "obtener todos los usuarios"
+                    },
+                    "400":{
+                        "description": "ocurrio un error al intentar obtener todos los usuarios"
+                    }
+                }
+            }
+        }
+    }
+}
